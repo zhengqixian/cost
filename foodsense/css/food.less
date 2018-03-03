@@ -1,0 +1,207 @@
+@charset "utf-8";
+*{
+  margin:0;
+  padding:0;
+  list-style: none;
+  box-sizing:border-box;
+}
+.wrap{
+  width:1080px;
+  margin:0 auto;
+  background: #ffffff;
+  position: relative;
+  overflow: hidden;
+}
+.header {
+  float: left;
+  width: 160px;
+  > h1 {
+    width: 120px;
+    height: 120px;
+    background: url("../img/food-sense.png") 0 -60px no-repeat;
+    background-size: cover;
+    text-indent: -10000px;
+  }
+  .nav {
+    width: 100%;
+    > ul {
+      width: 100%;
+      > li {
+        height: 60px;
+        line-height: 60px;
+        padding: 0 0 0 50px;
+        background-repeat: no-repeat;
+        background-position-y: 14px;
+        transition: background-position 0.2s ease;
+        color: green;
+        &:nth-child(1){
+          background-image:url("../img/nav-tastemakers.png");
+        }
+        &:nth-child(2){
+          background-image: url("../img/nav-blog.png");
+        }
+        &:nth-child(3){
+          background-image: url("../img/nav-alist.png");
+        }
+        &:nth-child(4){
+          background-image:url("../img/nav-contribute.png");
+        }
+        &:nth-child(5){
+          background-image:url("../img/nav-about.png");
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width:1176px){
+  .wrap{
+    width:896px;
+  }
+  .header{
+    >.nav{
+      >ul{
+        >li{
+          &:hover{
+            background-position-y:10px;
+            color:#ec6635;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width:992px){
+  @li_width:90px;
+  .wrap{
+    width:712px;
+  }
+  .header{
+    width:100%;
+    height:100%;
+    >.nav{
+      width: @li_width*5;
+      height:120px;
+      position: absolute;
+      top:0;
+      right:0;
+      >ul{
+        width:100%;
+        >li{
+          background-position:(@li_width/2px-16)20px;
+          height:100%;
+          width: @li_width;
+          float: left;
+          text-align: center;
+          padding:50px 0;
+          &:hover{
+            background-position: (@li_width/2px-16)30px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width:768px){
+  .wrap{
+    width:480px;
+  }
+  .header{
+    @li_width:70px;
+    >.nav{
+      width:@li_width*5;
+      >ul{
+        >li{
+          padding:0;
+          line-height:120px;
+          font-size: 12px;
+          width:@li_width;
+          background-image:none !important;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width:480px){
+  .wrap{
+    width:320px;
+  }
+  .header{
+    height:170px;
+    >h1{
+      position: absolute;
+      top:50px;
+      left:100px;
+    }
+    .nav{
+      width:100%;
+      left:0;
+      top:0;
+      >ul{
+        width:100%;
+        height:40px;
+        >li{
+          width:100%/5;
+          height:40px;
+          line-height:40px;
+        }
+      }
+    }
+  }
+}
+.content {
+  width: 896px;
+  float: right;
+  > .featured {
+    width: 100%;
+    height: 560px;
+    > .slides {
+      width: 100%;
+      height: 446px;
+      position: relative;
+      > section {
+        width: 896px;
+        > img {
+          width: 100%;
+          height: 446px;
+          position: absolute;
+          right: 0;
+        }
+      }
+    }
+    > .nav {
+      width: 100%;
+      background: #eff8f7;
+      border-bottom-right-radius: 3px;
+      > ul {
+        > li {
+          float: left;
+          > a {
+            display: block;
+            width: 224px;
+            height: 85px;
+            line-height: 1.1em;
+            //padding:8px 0 2px;
+            padding:25px 12px 0 20px;
+            color: #60beae;
+            border-right: 1px solid #d3ede9;
+            text-shadow: 0 1px 0 #fff;
+            box-shadow: 1px 0 0 #fafdfc;
+            transition:all 0.2s ease;
+            background-color: #d9efec;
+            &:hover{
+              color: #ec6635;
+            }
+            >h3{
+              font-size: 1.125em;
+            }
+            >p{
+              font-size: 0.3em;
+              font-style: italic;
+              display: inline;
+            }
+          }
+        }
+      }
+    }
+  }
+}

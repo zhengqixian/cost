@@ -1,0 +1,190 @@
+@charset "utf-8";
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+.wrap {
+  width: 1080px;
+  margin: 0 auto;
+  background: #ffffff;
+  position: relative;
+  overflow: hidden;
+}
+.header {
+  float: left;
+  width: 160px;
+}
+.header > h1 {
+  width: 120px;
+  height: 120px;
+  background: url("../img/food-sense.png") 0 -60px no-repeat;
+  background-size: cover;
+  text-indent: -10000px;
+}
+.header .nav {
+  width: 100%;
+}
+.header .nav > ul {
+  width: 100%;
+}
+.header .nav > ul > li {
+  height: 60px;
+  line-height: 60px;
+  padding: 0 0 0 50px;
+  background-repeat: no-repeat;
+  background-position-y: 14px;
+  transition: background-position 0.2s ease;
+  color: green;
+}
+.header .nav > ul > li:nth-child(1) {
+  background-image: url("../img/nav-tastemakers.png");
+}
+.header .nav > ul > li:nth-child(2) {
+  background-image: url("../img/nav-blog.png");
+}
+.header .nav > ul > li:nth-child(3) {
+  background-image: url("../img/nav-alist.png");
+}
+.header .nav > ul > li:nth-child(4) {
+  background-image: url("../img/nav-contribute.png");
+}
+.header .nav > ul > li:nth-child(5) {
+  background-image: url("../img/nav-about.png");
+}
+@media screen and (max-width: 1176px) {
+  .wrap {
+    width: 896px;
+  }
+  .header > .nav > ul > li:hover {
+    background-position-y: 10px;
+    color: #ec6635;
+  }
+}
+@media screen and (max-width: 992px) {
+  .wrap {
+    width: 712px;
+  }
+  .header {
+    width: 100%;
+    height: 100%;
+  }
+  .header > .nav {
+    width: 450px;
+    height: 120px;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .header > .nav > ul {
+    width: 100%;
+  }
+  .header > .nav > ul > li {
+    background-position: 29px 20px;
+    height: 100%;
+    width: 90px;
+    float: left;
+    text-align: center;
+    padding: 50px 0;
+  }
+  .header > .nav > ul > li:hover {
+    background-position: 29px 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .wrap {
+    width: 480px;
+  }
+  .header > .nav {
+    width: 350px;
+  }
+  .header > .nav > ul > li {
+    padding: 0;
+    line-height: 120px;
+    font-size: 12px;
+    width: 70px;
+    background-image: none !important;
+  }
+}
+@media screen and (max-width: 480px) {
+  .wrap {
+    width: 320px;
+  }
+  .header {
+    height: 170px;
+  }
+  .header > h1 {
+    position: absolute;
+    top: 50px;
+    left: 100px;
+  }
+  .header .nav {
+    width: 100%;
+    left: 0;
+    top: 0;
+  }
+  .header .nav > ul {
+    width: 100%;
+    height: 40px;
+  }
+  .header .nav > ul > li {
+    width: 20%;
+    height: 40px;
+    line-height: 40px;
+  }
+}
+.content {
+  width: 896px;
+  float: right;
+}
+.content > .featured {
+  width: 100%;
+  height: 560px;
+}
+.content > .featured > .slides {
+  width: 100%;
+  height: 446px;
+  position: relative;
+}
+.content > .featured > .slides > section {
+  width: 896px;
+}
+.content > .featured > .slides > section > img {
+  width: 100%;
+  height: 446px;
+  position: absolute;
+  right: 0;
+}
+.content > .featured > .nav {
+  width: 100%;
+  background: #eff8f7;
+  border-bottom-right-radius: 3px;
+}
+.content > .featured > .nav > ul > li {
+  float: left;
+}
+.content > .featured > .nav > ul > li > a {
+  display: block;
+  width: 224px;
+  height: 85px;
+  line-height: 1.1em;
+  padding: 25px 12px 0 20px;
+  color: #60beae;
+  border-right: 1px solid #d3ede9;
+  text-shadow: 0 1px 0 #fff;
+  box-shadow: 1px 0 0 #fafdfc;
+  transition: all 0.2s ease;
+  background-color: #d9efec;
+}
+.content > .featured > .nav > ul > li > a:hover {
+  color: #ec6635;
+}
+.content > .featured > .nav > ul > li > a > h3 {
+  font-size: 1.125em;
+}
+.content > .featured > .nav > ul > li > a > p {
+  font-size: 0.3em;
+  font-style: italic;
+  display: inline;
+}

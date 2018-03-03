@@ -1,0 +1,313 @@
+@charset "utf-8";
+body {
+  height: 1000px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+#navbar {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-bottom: 2px solid #0ba1e4;
+}
+#navbar .container {
+  max-width: 970px;
+}
+#navbar li a {
+  font-size: 16px;
+  line-height: 50px;
+  padding: auto 10px;
+}
+#navbar li a:hover {
+  color: #0ba1e4;
+}
+#navbar li:first-child a::after {
+  content: '';
+  display: block;
+  width: 18px;
+  height: 2px;
+  background-color: #0ba1e4;
+  margin: -12px auto;
+}
+@media (max-width: 768px) {
+  #navbar .navbar-brand {
+    padding-top: 0;
+  }
+  #navbar li a {
+    line-height: 30px;
+    padding-top: 0px;
+  }
+  #navbar li:first-child a::after {
+    display: none;
+  }
+}
+.active {
+  color: #0ba1e4 !important;
+}
+#carousel-example-generic > img {
+  width: 1920px;
+  max-width: 1920px;
+}
+@media (max-width: 768px) {
+  #carousel-example-generic img {
+    width: 200%;
+    max-width: 200%;
+  }
+}
+/*我们的成绩*/
+.our-data {
+  padding: 40px 0;
+  background-color: #ffffff;
+}
+.our-data .container {
+  max-width: 970px;
+}
+.our-data > div:first-child h2 {
+  color: #000;
+  font-weight: 300;
+}
+.our-data > div:first-child p.data {
+  font-size: 25px;
+  color: #777777;
+  padding-bottom: 30px;
+}
+.our-data > div:nth-last-child(-n+4) h2 {
+  color: #0ba1e4;
+  font-size: 50px;
+}
+.our-data > div:nth-last-child(-n+4) p {
+  font-size: 18px;
+  color: #777777;
+}
+.line {
+  width: 80px;
+  height: 3px;
+  background-color: #0ba1e4;
+  margin: 30px auto;
+}
+/*我们的优势*/
+.our-advantage {
+  padding: 40px 0px;
+  background-color: #ffffff;
+}
+.our-advantage > .container > .row div:first-child h2 {
+  font-weight: 300;
+}
+.our-advantage > .container > .row div:first-child p {
+  padding-bottom: 30px;
+  font-size: 25px;
+  color: #777;
+}
+.our-advantage > .container > .row div:nth-last-child(-n+4) div {
+  background-color: #ffffff;
+  padding: 30px 15px;
+}
+.our-advantage > .container > .row div:nth-last-child(-n+4) div span {
+  font-size: 70px;
+  color: #0ba1e4;
+  margin-bottom: 20px;
+}
+.our-advantage > .container > .row div:nth-last-child(-n+4) div h2 {
+  padding: 10px 0;
+}
+.our-advantage > .container > .row div:nth-last-child(-n+4) div:hover {
+  background-color: #0ba1e4;
+  color: #ffffff;
+  /*导航条 开始*/
+  /*导航条 结束*/
+  /*轮播图 开始*/
+  /*轮播图 结束*/
+  /*我们的成绩 开始*/
+  /*我们的成绩 结束*/
+  /*我们的优势 开始*/
+}
+.our-advantage > .container > .row div:nth-last-child(-n+4) div:hover span {
+  color: #ffffff;
+}
+.our-advantage > .container > .row div:nth-last-child(-n+4) div:hover body {
+  height: 2000px;
+}
+.our-advantage > .container > .row div:nth-last-child(-n+4) div:hover #navbar {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-bottom: 2px solid #0ba1e4;
+}
+.our-advantage > .container > .row div:nth-last-child(-n+4) div:hover #navbar .navbar-brand {
+  padding-right: 0;
+}
+.our-advantage > .container > .row div:nth-last-child(-n+4) div:hover #navbar .container {
+  max-width: 970px;
+}
+.our-advantage > .container > .row div:nth-last-child(-n+4) div:hover #navbar li a {
+  font-size: 16px;
+  line-height: 50px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.our-advantage > .container > .row div:nth-last-child(-n+4) div:hover #navbar li:first-child a::after {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: #0ba1e4;
+  margin: -10px auto;
+}
+@media (max-width: 768px) {
+  .our-advantage > .container > .row div:nth-last-child(-n+4) div:hover #navbar .navbar-brand {
+    padding-top: 0;
+  }
+  .our-advantage > .container > .row div:nth-last-child(-n+4) div:hover #navbar li a {
+    line-height: 30px;
+    padding-top: 0px;
+  }
+  .our-advantage > .container > .row div:nth-last-child(-n+4) div:hover #navbar li:first-child a::after {
+    display: none;
+  }
+}
+.our-advantage > .container > .row div:nth-last-child(-n+4) div:hover .active {
+  color: #0ba1e4 !important;
+}
+.our-advantage > .container > .row div:nth-last-child(-n+4) div:hover #carousel-example-generic img {
+  width: 1920px;
+  max-width: 1920px;
+}
+@media (max-width: 768px) {
+  .our-advantage > .container > .row div:nth-last-child(-n+4) div:hover #carousel-example-generic img {
+    width: 200%;
+    max-width: 200%;
+  }
+}
+.our-advantage > .container > .row div:nth-last-child(-n+4) div:hover .our-data {
+  background-color: #f8f8f8;
+  padding: 40px 0px;
+}
+.our-advantage > .container > .row div:nth-last-child(-n+4) div:hover .our-data .container {
+  max-width: 970px;
+}
+.our-advantage > .container > .row div:nth-last-child(-n+4) div:hover .our-data > div:first-child h2 {
+  font-weight: 300;
+}
+.our-advantage > .container > .row div:nth-last-child(-n+4) div:hover .our-data > div:first-child p {
+  font-size: 25px;
+  color: #777777;
+  padding-bottom: 30px;
+}
+.our-advantage > .container > .row div:nth-last-child(-n+4) div:hover .our-data h2 {
+  color: #000;
+  font-weight: normal;
+}
+.our-advantage > .container > .row div:nth-last-child(-n+4) div:hover .our-data p.date {
+  font-size: 25px;
+  color: #777777;
+  padding-bottom: 30px;
+}
+.our-advantage > .container > .row div:nth-last-child(-n+4) div:hover .our-data > div:nth-last-child(-n+4) h2 {
+  color: #0ba1e4;
+  font-size: 50px;
+}
+.our-advantage > .container > .row div:nth-last-child(-n+4) div:hover .our-data > div:nth-last-child(-n+4) p {
+  font-size: 18px;
+  color: #777777;
+}
+.our-advantage > .container > .row div:nth-last-child(-n+4) div:hover .line {
+  width: 80px;
+  height: 3px;
+  background-color: #0ba1e4;
+  margin: 30px auto;
+}
+.our-advantage > .container > .row div:nth-last-child(-n+4) div:hover .our-advantage {
+  background-color: #e1e1e1;
+  padding: 40px 0px;
+}
+.our-advantage > .container > .row div:nth-last-child(-n+4) div:hover .our-advantage .container {
+  width: 970px;
+}
+.our-advantage > .container > .row div:nth-last-child(-n+4) div:hover .our-advantage > .container > .row > div:first-child h2 {
+  font-weight: 300;
+}
+.our-advantage > .container > .row div:nth-last-child(-n+4) div:hover .our-advantage > .container > .row > div:first-child p.data {
+  font-size: 20px;
+  color: #777777;
+  padding-bottom: 30px;
+}
+.our-advantage > .container > .row div:nth-last-child(-n+4) div:hover .our-advantage > .container > .row > div:nth-last-child(-n+4) > div {
+  background-color: #ffffff;
+  padding: 30px 15px;
+}
+.our-advantage > .container > .row div:nth-last-child(-n+4) div:hover .our-advantage > .container > .row > div:nth-last-child(-n+4) > div span {
+  font-size: 70px;
+  color: #0ba1e4;
+  margin-bottom: 20px;
+}
+.our-advantage > .container > .row div:nth-last-child(-n+4) div:hover .our-advantage > .container > .row > div:nth-last-child(-n+4) > div h2.h3 {
+  font-size: 20px;
+  padding: 10px 0;
+}
+.our-advantage > .container > .row div:nth-last-child(-n+4) div:hover .our-advantage > .container > .row > div:nth-last-child(-n+4) > div p {
+  font-size: 14px;
+}
+.our-advantage > .container > .row div:nth-last-child(-n+4) div:hover .our-advantage > .container > .row > div:nth-last-child(-n+4) > div:hover {
+  background-color: #0ba1e4;
+  color: #ffffff;
+}
+.our-advantage > .container > .row div:nth-last-child(-n+4) div:hover .our-advantage > .container > .row > div:nth-last-child(-n+4) > div:hover span {
+  color: #ffffff;
+}
+.our-advantage > .container > .row div:nth-last-child(-n+4) div:hover .our-advantage > .container > .row > div:nth-last-child(-n+4) > div:hover p {
+  color: #ffffff;
+}
+/*我们的服务*/
+.our-service {
+  background-color: #ffffff;
+}
+.our-service .container {
+  width: 100%;
+}
+.our-service .container > .row {
+  padding: 50px 0;
+}
+.our-service .container > .row > div:nth-child(1) p.date {
+  font-size: 20px;
+  padding-bottom: 40px;
+}
+.our-service .container > .row > div:nth-child(2) > .card-area {
+  overflow: hidden;
+  /*.card-active{
+            background-color: @zl_blue;
+            border:1px solid @zl_blue;
+            box-shadow:0 0 20px 0 rgba(45,183,245,0.5);
+            color: #ffffff;
+            z-index: 11;
+            >.card-title{
+              border-color: #ffffff;
+          }*/
+}
+.our-service .container > .row > div:nth-child(2) > .card-area > .card-item {
+  float: left;
+  position: relative;
+  padding-left: 15px;
+  padding-right: 19px;
+  width: 25%;
+  background-color: #fafafa;
+  border: 1px solid #c1c1c1;
+  transition: all 0.3s ease-in-out;
+}
+.our-service .container > .row > div:nth-child(2) > .card-area > .card-title {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #c1c1c1;
+}
+.our-service .container > .row > div:nth-child(2) > .card-area > .card-title > h4 {
+  line-height: 2em;
+  font-size: 18px;
+  color: #0ba1e4;
+}
+.our-service .container > .row > div:nth-child(2) > .card-area > .card-title > p {
+  color: #777777;
+  line-height: 2em;
+}
+.our-service .container > .row > div:nth-child(2) > .card-area > .card-content {
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
